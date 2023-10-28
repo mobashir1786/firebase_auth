@@ -5,7 +5,7 @@ const Home = () => {
     const handleLogout = () => {
         // console.log("logout");
         document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        window.location.href = 'http://localhost:3000';
+        window.location.href = 'https://firebase-auth-ten.vercel.app/';
     }
     return (
         <div className='homePage'>

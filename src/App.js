@@ -7,7 +7,6 @@ import Home from './components/home/Home';
 function App() {
 
   let cookie = document.cookie;
-  // cookie = cookie.split("=");
   console.log(cookie);
 
   return (

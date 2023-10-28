@@ -30,7 +30,7 @@ const Signup = () => {
                     // console.log(res.user.displayName);
                     document.cookie = "token=" + res.user.accessToken + "; expires=" + Date.now() + 1 * 24 * 60 * 60 * 1000;
                     alert(`${res.user.displayName} , thank you for register`)
-                    window.location.href = 'http://localhost:3000';
+                    window.location.href = 'https://firebase-auth-ten.vercel.app/';
                 }).catch(err => {
                     console.log(err.message);
                 })

@@ -12,7 +12,7 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then(async (res) => {
                 document.cookie = "token=" + res.user.accessToken + "; expires=" + Date.now() + 1 * 24 * 60 * 60 * 1000;
-                window.location.href = 'http://localhost:3000';
+                window.location.href = 'https://firebase-auth-ten.vercel.app/';
             })
             .catch((err) => {
                 alert(err.message);
